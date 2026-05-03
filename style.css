@@ -245,8 +245,8 @@ nav a:hover {
 /* Product Grid & Cards ELEGANTE */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
 }
 
 .product-card {
@@ -419,13 +419,15 @@ footer {
     .section-header p { font-size: 1rem; }
     .daily-selection, .catalog { padding: 4rem 5%; }
 
-    /* Tarjetas: 1 columna de ancho completo en móvil */
+    /* Tarjetas: 2 columnas en móvil para ver 2 a la vez */
     .product-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
-    .card-info h3 { font-size: 1.4rem; }
-    .card-info p { font-size: 1rem; }
+    .card-img-wrapper { height: 160px; }
+    .card-info h3 { font-size: 1rem; }
+    .card-info p { font-size: 0.85rem; }
+    .buy-btn { font-size: 0.85rem; padding: 0.8rem; }
 
     /* Footer Ajustado */
     footer { padding: 4rem 5% 2rem; margin-top: 2rem; }
