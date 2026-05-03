@@ -73,6 +73,24 @@ const dbProductos = [
         name: "Figura Spider-Man Miles Morales",
         img: "assets/spiderman.png",
         desc: "Espectacular figura cabezona de Spider-Man con su icónica sudadera. ¡Ideal para exhibir!"
+    },
+    {
+        id: 13,
+        name: "Organizador Cactus para Escritorio",
+        img: "assets/cactus-organizer.png",
+        desc: "Porta audífonos y accesorios en forma de cactus. Funcional, minimalista y con un estilo increíble."
+    },
+    {
+        id: 14,
+        name: "Maqueta Mercedes-AMG GT Escala",
+        img: "assets/mercedes.png",
+        desc: "Réplica a escala del icónico Mercedes-AMG GT. Impresión ultradetallada para coleccionistas del automovilismo."
+    },
+    {
+        id: 15,
+        name: "Placa de Escritorio Personalizada",
+        img: "assets/nameplate.png",
+        desc: "Placa elegante con tu nombre y título personalizado. El detalle perfecto para tu escritorio de oficina."
     }
 ];
 
@@ -89,7 +107,7 @@ function getDailySelection() {
     const startIndex = Math.abs(hash) % dbProductos.length;
     
     const dailyItems = [];
-    for(let i = 0; i < 3; i++) {
+    for(let i = 0; i < 4; i++) {
         const index = (startIndex + i) % dbProductos.length;
         dailyItems.push(dbProductos[index]);
     }
