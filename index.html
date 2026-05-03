@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D AGSHOP | Impresiones 3D Premium</title>
+    <meta name="description" content="Colección animada de impresiones 3D. Modelos fantásticos personalizados, rotando de forma diaria.">
+    <!-- AOS CSS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Partículas animadas de fondo -->
+    <div id="particles-js"></div>
+
+    <header class="glass-header" data-aos="fade-down" data-aos-duration="1000">
+        <div class="logo">
+            <span class="gradient-text">3D AGSHOP</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hoy">Selección del Día</a></li>
+                <li><a href="#catalogo">Catálogo Creadores</a></li>
+                <li><a href="https://wa.me/524491070164" class="cta-button" target="_blank">Contacto Flash</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1500">
+                <h1 class="hero-title">
+                    Arte Impreso que <br> 
+                    <span class="gradient-text">Cobra Vida</span>
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="400">Descubre nuestra colección de objetos exclusivos y personalizaciones en 3D. Figuras, nombres y decoraciones espectaculares. ¡Inspírate con nuestra selección!</p>
+                <a href="#hoy" class="hero-btn" data-aos="zoom-in" data-aos-delay="600">Descubre la colección</a>
+            </div>
+            <div class="hero-image-wrapper" data-aos="fade-left" data-aos-duration="2000">
+                <div class="blob rotate-blob"></div>
+                <div class="blob blob2 reverse-rotate-blob"></div>
+                <img src="assets/mario.png" alt="Super Mario 3D Print" class="hero-img floating" id="heroImage">
+            </div>
+        </section>
+
+        <section id="hoy" class="daily-selection" data-aos="fade-up" data-aos-duration="1500">
+            <div class="section-header" data-aos="zoom-in-up">
+                <h2>⚡ SELECCIÓN DIARIA ⚡</h2>
+                <p>Nuevos modelos locos mañana a medianoche. ¡No pestañees!</p>
+            </div>
+            <div class="product-grid" id="daily-grid">
+                <!-- Javascript injects this -->
+            </div>
+        </section>
+
+        <section id="catalogo" class="catalog" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="100">
+            <div class="section-header" data-aos="zoom-out">
+                <h2>Catálogo <span class="gradient-text">Creativo</span> 3D AGSHOP</h2>
+            </div>
+            <div class="product-grid" id="catalog-grid">
+                <!-- Javascript injects this -->
+            </div>
+        </section>
+    </main>
+
+    <footer data-aos="fade-up">
+        <div class="footer-content">
+            <h3>3D AGSHOP</h3>
+            <p>Tus ideas hechas realidad con nuestras impresiones. Decoración, personalizadas y funcionalidad combinadas.</p>
+            <a href="https://wa.me/524491070164" class="footer-btn" target="_blank">¡Me interesa!</a>
+        </div>
+    </footer>
+
+    <!-- Scripts para demasiadas animaciones -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
